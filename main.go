@@ -7,7 +7,7 @@ import (
 
 	"github.com/micro/micro/v3/service"
 	"github.com/micro/micro/v3/service/context/metadata"
-	proto "github.com/tullo/shippy/shippy-service-consignment/proto"
+	proto "github.com/tullo/shippy-service-consignment/proto"
 )
 
 const address = "localhost:50051"

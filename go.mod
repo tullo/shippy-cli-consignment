@@ -2,11 +2,11 @@ module github.com/tullo/shippy-cli-consignment
 
 go 1.20
 
-// replace github.com/tullo/shippy/shippy-service-consignment => ../shippy-service-consignment
+// replace github.com/tullo/shippy-service-consignment => ../shippy-service-consignment
 
 require (
 	github.com/micro/micro/v3 v3.16.0
-	github.com/tullo/shippy/shippy-service-consignment v0.0.0-20230318131614-8bc73ce8f6ea
+	github.com/tullo/shippy-service-consignment v1.0.1
 )
 
 require (
@@ -44,11 +44,11 @@ require (
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
 	go.etcd.io/bbolt v1.3.6 // indirect
 	go.uber.org/atomic v1.10.0 // indirect
-	golang.org/x/mod v0.7.0 // indirect
-	golang.org/x/net v0.7.0 // indirect
-	golang.org/x/sys v0.5.0 // indirect
-	golang.org/x/text v0.7.0 // indirect
-	golang.org/x/tools v0.5.0 // indirect
+	golang.org/x/mod v0.8.0 // indirect
+	golang.org/x/net v0.8.0 // indirect
+	golang.org/x/sys v0.6.0 // indirect
+	golang.org/x/text v0.8.0 // indirect
+	golang.org/x/tools v0.6.0 // indirect
 	google.golang.org/genproto v0.0.0-20230106154932-a12b697841d9 // indirect
 	google.golang.org/grpc v1.51.0 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
