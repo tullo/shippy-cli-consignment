@@ -5,7 +5,7 @@ go 1.20
 // replace github.com/tullo/shippy-service-consignment => ../shippy-service-consignment
 
 require (
-	github.com/micro/micro/v3 v3.17.0
+	github.com/micro/micro/v3 v3.18.5
 	github.com/tullo/shippy-service-consignment v1.0.2
 )
 
@@ -62,7 +62,7 @@ require (
 	golang.org/x/text v0.8.0 // indirect
 	golang.org/x/tools v0.7.0 // indirect
 	google.golang.org/genproto v0.0.0-20230306155012-7f2fa6fef1f4 // indirect
-	google.golang.org/grpc v1.53.0 // indirect
+	google.golang.org/grpc v1.54.1 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
 	gopkg.in/fsnotify.v1 v1.4.7 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
