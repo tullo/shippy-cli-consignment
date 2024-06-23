@@ -1,6 +1,6 @@
 module github.com/tullo/shippy-cli-consignment
 
-go 1.20
+go 1.22
 
 // replace github.com/tullo/shippy-service-consignment => ../shippy-service-consignment
 
