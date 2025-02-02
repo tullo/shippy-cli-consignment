@@ -5,8 +5,7 @@ go 1.22
 // replace github.com/tullo/shippy-service-consignment => ../shippy-service-consignment
 
 require (
-	github.com/micro/micro/v5 v5.0.0
-	github.com/micro/micro/v5 v5.0.0
+	github.com/micro/micro/v3 v3.19.0
 	github.com/tullo/shippy-service-consignment v1.0.3
 )
 
@@ -15,6 +14,7 @@ require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.4 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/evanphx/json-patch/v5 v5.9.0 // indirect
+	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/go-acme/lego/v3 v3.9.0 // indirect
 	github.com/go-task/slim-sprig/v3 v3.0.0 // indirect
 	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
@@ -42,7 +42,7 @@ require (
 	golang.org/x/crypto v0.31.0 // indirect
 	golang.org/x/exp v0.0.0-20240613232115-7f521ea00fb8 // indirect
 	golang.org/x/mod v0.18.0 // indirect
-	golang.org/x/net v0.28.0 // indirect
+	golang.org/x/net v0.33.0 // indirect
 	golang.org/x/sync v0.10.0 // indirect
 	golang.org/x/sys v0.28.0 // indirect
 	golang.org/x/text v0.21.0 // indirect
