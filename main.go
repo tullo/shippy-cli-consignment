@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"log"
 
-	"github.com/micro/micro/v3/service"
-	"github.com/micro/micro/v3/service/context/metadata"
+	"github.com/micro/micro/v5/service"
+	"github.com/micro/micro/v5/service/context/metadata"
 	proto "github.com/tullo/shippy-service-consignment/proto"
 )
 
