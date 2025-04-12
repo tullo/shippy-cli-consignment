@@ -6,11 +6,12 @@ import (
 	"log"
 
 	"github.com/micro/micro/v5/service"
-	"github.com/micro/micro/v5/service/context/metadata"
 	proto "github.com/tullo/shippy-service-consignment/proto"
 )
 
-const address = "localhost:50051"
+type contextKey string
+
+const tokenKey contextKey = "token"
 
 var payload = `{
 	"description": "This is a test consignment",
@@ -43,9 +44,10 @@ func main() {
 	}
 
 	// Create a new context which contains our given token.
-	ctx := metadata.NewContext(context.Background(), map[string]string{
-		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyIjp7ImlkIjoiM2I4NWNjM2UtOGVkZS00ZDk2LTliZjYtNTQwYjE1ZGJlNjdhIiwiZW1haWwiOiJqb2huLmRvZUBjcGguY29tIiwicGFzc3dvcmQiOiJzM2NyM3QifSwiZXhwIjoxNjEyMzYyMjUwLCJpYXQiOjE2MTIzNTg2NTAsImlzcyI6InNoaXBweS5zZXJ2aWNlLnVzZXIifQ.sSwmfZXx0E-MEcOgSSvI_EVBGUly1ENagtpLYSCa4HQ",
-	})
+	ctx := context.WithValue(context.Background(),
+		tokenKey,
+		"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyIjp7ImlkIjoiM2I4NWNjM2UtOGVkZS00ZDk2LTliZjYtNTQwYjE1ZGJlNjdhIiwiZW1haWwiOiJqb2huLmRvZUBjcGguY29tIiwicGFzc3dvcmQiOiJzM2NyM3QifSwiZXhwIjoxNjEyMzYyMjUwLCJpYXQiOjE2MTIzNTg2NTAsImlzcyI6InNoaXBweS5zZXJ2aWNlLnVzZXIifQ.sSwmfZXx0E-MEcOgSSvI_EVBGUly1ENagtpLYSCa4HQ",
+	)
 
 	r, err := client.CreateConsignment(ctx, consignment)
 	if err != nil {
