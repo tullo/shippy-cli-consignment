@@ -7,7 +7,7 @@ toolchain go1.24.2
 // replace github.com/tullo/shippy-service-consignment => ../shippy-service-consignment
 
 require (
-	github.com/micro/micro/v5 v5.4.0
+	github.com/micro/micro/v5 v5.5.0
 	github.com/tullo/shippy-service-consignment v1.0.4
 )
 
