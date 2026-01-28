@@ -15,7 +15,7 @@ COPY *.go .
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o shippy-cli-consignment
 
 # Run container
-FROM alpine:3.23.2
+FROM alpine:3.23.3
 
 RUN apk --no-cache add ca-certificates
 
