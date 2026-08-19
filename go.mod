@@ -2,7 +2,7 @@ module github.com/tullo/shippy-cli-consignment
 
 go 1.25
 
-toolchain go1.26.6
+toolchain go1.27.0
 
 // replace github.com/tullo/shippy-service-consignment => ../shippy-service-consignment
 
